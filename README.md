@@ -14,8 +14,8 @@ pip install nodechalk
 ```
 
 ## Usage
-````
-chalk = require("chalk")
+````python
+import chalk
 print chalk.red("Hello chalk")
 ````
 
