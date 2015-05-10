@@ -15,7 +15,6 @@ from setuptools import find_packages
 
 version = '0.1.0'
 
-
 class CleanCommand(Command):
     description = "clean build directories"
     user_options = []
@@ -31,7 +30,7 @@ class CleanCommand(Command):
         if os.path.exists(os.path.join(os.path.dirname(__file__), "chalk.egg-info")):
             shutil.rmtree(os.path.join(os.path.dirname(__file__), "chalk.egg-info"))
 
-setup(name = 'chalk',
+setup(name = 'nodechalk',
     version = version,
     description = "Terminal string styling for python",
     long_description = "",

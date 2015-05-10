@@ -10,7 +10,7 @@
 
 ## install
 ```
-pip install chalk
+pip install nodechalk
 ```
 
 ## Usage
