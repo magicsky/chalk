@@ -13,7 +13,7 @@ from setuptools import setup
 from setuptools import Command
 from setuptools import find_packages
 
-version = '0.1.0'
+version = '0.1.1'
 
 class CleanCommand(Command):
     description = "clean build directories"
@@ -27,8 +27,8 @@ class CleanCommand(Command):
             shutil.rmtree(os.path.join(os.path.dirname(__file__), "build"))
         if os.path.exists(os.path.join(os.path.dirname(__file__), "dist")):
             shutil.rmtree(os.path.join(os.path.dirname(__file__), "dist"))
-        if os.path.exists(os.path.join(os.path.dirname(__file__), "chalk.egg-info")):
-            shutil.rmtree(os.path.join(os.path.dirname(__file__), "chalk.egg-info"))
+        if os.path.exists(os.path.join(os.path.dirname(__file__), "nodechalk.egg-info")):
+            shutil.rmtree(os.path.join(os.path.dirname(__file__), "nodechalk.egg-info"))
 
 setup(name = 'nodechalk',
     version = version,
@@ -49,7 +49,7 @@ setup(name = 'nodechalk',
     keywords = ("chalk", "terminal color"),
     author = 'magicsky',
     author_email = 'garcia.relax@gmail.com',
-    url = 'https://github.com/magicsky/chalk',
+    url = 'https://github.com/magicsky/nodechalk',
     license = 'MIT',
     packages = find_packages(),
 

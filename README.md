@@ -1,4 +1,4 @@
-# chalk 
+# nodechalk 
 > Terminal string styling for python. Native port of [chalk for nodejs](https://www.npmjs.com/package/chalk)
 
 ![preview](http://cdn-qiniu.qiniudn.com/ebe705f3.png)
@@ -50,3 +50,4 @@ print chalk.red("Hello chalk")
 * bgMagenta
 * bgCyan
 * bgWhite
+
