@@ -7,32 +7,32 @@
 @date: 2015/05/09
 """
 
-from Chalk import reset
-from Chalk import bold
-from Chalk import dim
-from Chalk import italic
-from Chalk import underline
-from Chalk import inverse
-from Chalk import hidden
-from Chalk import strikethrough
+from chalk import reset
+from chalk import bold
+from chalk import dim
+from chalk import italic
+from chalk import underline
+from chalk import inverse
+from chalk import hidden
+from chalk import strikethrough
 
-from Chalk import black
-from Chalk import red
-from Chalk import green
-from Chalk import yellow
-from Chalk import blue
-from Chalk import magenta
-from Chalk import cyan
-from Chalk import white
-from Chalk import gray
+from chalk import black
+from chalk import red
+from chalk import green
+from chalk import yellow
+from chalk import blue
+from chalk import magenta
+from chalk import cyan
+from chalk import white
+from chalk import gray
 
-from Chalk import bgBlack
-from Chalk import bgRed
-from Chalk import bgGreen
-from Chalk import bgYellow
-from Chalk import bgBlue
-from Chalk import bgMagenta
-from Chalk import bgCyan
-from Chalk import bgWhite
+from chalk import bgBlack
+from chalk import bgRed
+from chalk import bgGreen
+from chalk import bgYellow
+from chalk import bgBlue
+from chalk import bgMagenta
+from chalk import bgCyan
+from chalk import bgWhite
 
 from SupportedColor import isSupportColor
