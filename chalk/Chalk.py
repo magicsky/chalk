@@ -7,12 +7,12 @@
 @date: 2015/05/09
 """
 
+from __future__ import absolute_import
+
 from types import ModuleType
-import os
-import re
 import sys
 
-from SupportedColor import isSupportColor
+from chalk.SupportedColor import isSupportColor
 
 class Chalk(ModuleType):
 
@@ -56,8 +56,10 @@ class Chalk(ModuleType):
         def colorIt(s):
             found = None
             colored = s
-            for key, value in self.styles.iteritems():
-                for name, values in value.iteritems():
+            for key in self.styles.keys():
+                value = self.styles[key]
+                for name in value.keys():
+                    values = value[name]
                     if name != style:
                         continue
                     found = values

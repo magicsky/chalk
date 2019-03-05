@@ -7,6 +7,8 @@
 @date: 2015/05/09
 """
 
+from __future__ import absolute_import
+
 import os
 import re
 import sys
@@ -16,5 +18,5 @@ def getIsTermSupport():
     return pattern.match(os.getenv("TERM")) is not None
 
 def isSupportColor():
-    return (os.isatty(file.fileno(sys.stdout)) != 0 and getIsTermSupport()) and \
-        (os.isatty(file.fileno(sys.stderr)) != 0 and getIsTermSupport())
+    return (os.isatty(sys.stdout.fileno()) != 0 and getIsTermSupport()) and \
+        (os.isatty(sys.stderr.fileno()) != 0 and getIsTermSupport())

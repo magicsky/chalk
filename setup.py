@@ -13,7 +13,7 @@ from setuptools import setup
 from setuptools import Command
 from setuptools import find_packages
 
-version = '0.1.2'
+version = '0.2.0'
 
 class CleanCommand(Command):
     description = "clean build directories"
